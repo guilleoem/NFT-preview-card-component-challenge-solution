@@ -1,0 +1,170 @@
+:root {
+  /* ----  ### Primary    ----*/
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Cyan-overlay: hsl(178, 100%, 50%, 0.7);
+
+/* -----  ### Neutral   ---*/
+
+--Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+--Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+--Very-dark-blue-line-: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue-mainBG);
+  font-family: 'Outfit';
+}
+
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+a:hover {
+  color: var(--Cyan);
+}
+
+/* ----------- main container -------------------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ------------------ card container -------------*/
+
+.card {
+  background-color: var(--Very-dark-blue-cardBG);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------- image ------------------------ */
+
+.imgContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.imgMain {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.overlay {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: var(--Cyan-overlay);
+  position: absolute;
+  top: 0;
+  left:0;
+  opacity: 0;
+
+}
+
+.imgOverlay {
+  position:absolute;
+  top: 126px;
+  left: 126px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+/*--------------------------- card title ---------------------------*/
+
+h2 {
+  margin-top: 27px;
+}
+.card>p{
+  margin-top: 22px;
+  width: 300px;
+  font-size: 18px;
+  color: var(--Soft-blue);
+}
+/*---------------------------- balance -----------------------------*/
+
+.balanceHistory {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin-top: 28px;
+  margin-bottom: 24px;
+  justify-content: space-between;
+}
+
+.balanceHistory p {
+  white-space: nowrap;
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.balanceHistory img {
+  height: 17px;
+}
+.balance {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--Cyan);
+  font-weight: bold;
+}
+
+.history {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--Soft-blue);
+}
+
+/*---------------------------- user -------------------------------*/
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 17px;
+  border-top: 1px solid var(--Soft-blue);
+  color: var(--Soft-blue);
+}
+
+.userPhoto {
+  width: 35px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  margin-right: 17px;
+}
+
+/*----------------- footer --------------------*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.attribution { 
+  font-size: 11px;
+  text-align: center; }
+
+  .attribution a {
+  color: hsl(228, 45%, 44%);
+}
